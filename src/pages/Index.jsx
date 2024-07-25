@@ -25,7 +25,13 @@ const Index = () => {
         <div className="bg-card text-card-foreground p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-semibold mb-2">Interactive Component</h3>
           <p className="mb-4">Click count: {count}</p>
-          <Button onClick={() => setCount(count + 1)}>Increment</Button>
+          <Button 
+            variant="destructive" 
+            className="bg-orange-500 hover:bg-orange-600"
+            onClick={() => setCount(count + 1)}
+          >
+            Increment
+          </Button>
         </div>
       </main>
 
